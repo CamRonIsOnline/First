@@ -2,6 +2,8 @@
 
     const garageSections = prompt('Enter the number of garage sections you would like to have in total (NOTE: There are 30 individual garage slots per section):');
     
+    if (garageSections === null) return;
+    
     /* Source: https://developer.mozilla.org/en-US/docs/Web/API/Document/cookie */
     const getCookieValue = name => {
         return document.cookie
